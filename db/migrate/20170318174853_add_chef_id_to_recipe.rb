@@ -3,3 +3,4 @@ class AddChefIdToRecipe < ActiveRecord::Migration[5.0]
     add_column :recipes, :chef_id, :integer
   end
 end
+
