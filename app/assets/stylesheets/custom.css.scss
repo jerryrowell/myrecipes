@@ -7,11 +7,6 @@ $navbar-default-bg: #2ECC60;
   text-align: center;
 }
 
-.jumbotron {
-  background-image: asset-url('cover_image.jpg');
-  background-size: cover;
-  height: 300px;
-}
 
 #logo {
   float: left;
@@ -27,21 +22,7 @@ $navbar-default-bg: #2ECC60;
   text-decoration: none;
 }  
 
-.jumbotron h1 {
-  color: #fff;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: -1px;
-  font-weight: bold;
-}
 
-.jumbotron h2 {
-  color: #fff;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: -1px;
-  font-weight: bold;
-}
 
 .btn-xlarge {
   background-color: #073B15;
@@ -96,30 +77,13 @@ footer ul li {
   color: #2ECC60;
 }
 
-.chef_info {
-  margin-top: 10px;
-}
-
 .colormatch a {
   color: #2ECC60;
-}
-
-.recipe-actions {
-  padding-top: 5px;
-  a {
-    color: #fff;
-  }
 }
 
 .listing {
   list-style: none;
   padding-left: 0;
-}
-
-.chef-title {
-  color: #073B15;
-  font-weight: bold;
-  font-size: 1.25em;
 }
 
 .input_checkbox input {
