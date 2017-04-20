@@ -6,7 +6,7 @@ class Chef < ApplicationRecord
                     uniqueness: { case_sensitive: false }, 
                     format: { with: VALID_EMAIL_REGEX }
                     
-  has_many :recipes
+  has_many :recipes, dependent: :destroy
   has_secure_password
   validates :password, presence: true, length: {minimum: 5}, allow_nil: true
 end
