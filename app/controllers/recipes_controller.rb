@@ -1,5 +1,6 @@
  class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update]
+  before_action :require_user, except: [:index, :show]
   
   def index
     @recipes = Recipe.paginate(page: params[:page], per_page: 5)
@@ -15,7 +16,7 @@
   
   def create 
     @recipe = Recipe.new(recipe_params)
-    @recipe.chef = Chef.first
+    @recipe.chef = current_chef
     if @recipe.save
       flash[:success] = "Your recipe was created succesfully!"
       redirect_to recipe_path(@recipe)
